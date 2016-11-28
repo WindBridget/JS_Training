@@ -46,7 +46,7 @@ Items.prototype.BuildItem = function(){
 			"<div class='item-description'>" + $("#Desctiption").val() + "</div>" + "<div>" +
 			"<button type='button'" + "class='btn btn-danger'" + "onclick='item.Display(this);'>" + "Edit" + "</button>" 
 		+ " " + "<button type='button'" + "class='btn btn-danger'" + "onclick='item.Delete(this);'>" + "Delete" + "</button>" + " "
-		+"<button type='button'" + "class='btn btn-danger'" + "onclick='item.MoveToDoneList(this);'>" + "Done" + "</button>" +
+		+"<button type='button'" + "class='btn btn-primary'" + "onclick='item.MoveToDoneList(this);'>" + "Done" + "</button>" +
 			"</div>" + "</div>" + "</li>" ;
 		return ret;
 
@@ -68,7 +68,7 @@ Items.prototype.MoveToDoneList = function(ctl){
 		"<div  class='item-description'>" + $(".item-description").val()  + "</div>" + "<div>" +
 		"<button type='button'" + "class='btn btn-danger'" + "onclick='item.Display(this);'>" + "Edit" + "</button>" 
 	+ " " + "<button type='button'" + "class='btn btn-danger'" + "onclick='item.Delete(this);'>" + "Delete" + "</button>" + " " +
-	"<button type='button'" + "class='btn btn-danger'" + "onclick='item.MoveToToDoList(this);'>" + "ToDo" + "</button>" +	"</div>" + "</div>" + "</li>";
+	"<button type='button'" + "class='btn btn-success'" + "onclick='item.MoveToToDoList(this);'>" + "ToDo" + "</button>" +	"</div>" + "</div>" + "</li>";
 	$("#Done").append(ret);
 	$(ctl).parents("li").remove();
 };
@@ -82,7 +82,7 @@ Items.prototype.MoveToToDoList = function(ctl){
 		"<div  class='item-description'>" + $(".item-description").val()  + "</div>" + "<div>" +
 		"<button type='button'" + "class='btn btn-danger'" + "onclick='Display(this);'>" + "Edit" + "</button>" 
 	+ " " + "<button type='button'" + "class='btn btn-danger'" + "onclick='Delete(this);'>" + "Delete" + "</button>" + " " +
-	"<button type='button'" + "class='btn btn-danger'" + "onclick='item.MoveToDoneList(this);'>" + "Done" + "</button>" +	"</div>" + "</div>" + "</li>";
+	"<button type='button'" + "class='btn btn-primary'" + "onclick='item.MoveToDoneList(this);'>" + "Done" + "</button>" +	"</div>" + "</div>" + "</li>";
 	$("#ToDo").append(ret);
 	$(ctl).parents("li").remove();
 };
