@@ -1,0 +1,43 @@
+
+.no-margin{
+	margin: 0 !important;
+}
+.no-padding{
+	padding: 0 !important;
+}
+.add-box{
+	padding: 0 400px;
+}
+
+.add-box form{
+	border: 1px solid #55616b;
+	padding: 5px;
+}
+
+.add-box form input{
+	display: block;
+}
+.add-box input, textarea{
+	width: 100%;
+}
+.list-items {
+	padding: 10px;
+}
+
+.list-items ul li {
+	list-style: none;
+	display: inline-block;
+	padding: 5px;
+}
+.item{
+	border: 1px solid #55616b;
+	padding: 5px;
+}
+.item-title{
+	font-size: 18;
+	font-weight: 700;
+}
+
+.item-description{
+	height: 150px;
+}

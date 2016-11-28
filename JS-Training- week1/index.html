@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>JS Training</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1>
+					HieuNN
+				</h1>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 add-box"> 
+			<form>
+				<input type="text" name="title" id="Title" class="" placeholder="Title">
+				<textarea type="text" name="class" id="Desctiption" class="" placeholder="Description"></textarea> 
+				<button type="button" class="btn btn-danger pull-right" id="updateButton" onclick="item.Update();">Submit</button>
+				<div class="clearfix"></div>
+			</form>
+		</div>
+	</div>
+	<div class="row item-list">
+		<div class="col-md-12 end-item">
+			<h3>To do List</h3>
+			<div class="list-items">
+				<ul id="ToDo" class="row no-padding">
+					<li class="col-md-2">
+						<div class="item">						
+							<div class="item-title">Levi's Tshirt</div>
+							<div class="item-description">Clothes</div>
+							<div>
+								<button type="button" onclick="item.Display(this);" class="btn btn-danger">Edit</button>
+								<button type="button" class="btn btn-danger" onclick="item.Delete(this);">Delete</button>
+								<button type="button" class="btn btn-danger" onclick="item.MoveToDoneList(this);">Done</button>
+							</div>
+						</div>
+					</li>
+					<li class="col-md-2">
+						<div class="item">	
+							<div class="item-title">LED</div>
+							<div class="item-description">Electronics</div>
+							<div>
+								<button type="button" class="btn btn-danger" onclick="item.Display(this);">Edit</button>
+								<button type="button" class="btn btn-danger" onclick="item.Delete(this);">Delete</button>
+								<button type="button" class="btn btn-danger" onclick="item.MoveToDoneList(this);">Done</button>
+							</div>
+						</div>
+					</li>
+					<li class="col-md-2">
+						<div class="item">
+							<div class="item-title">Addidas ZigZag</div>
+							<div class="item-description">Shoes</div>
+							<div>
+								<button type="button" class="btn btn-danger" onclick="item.Display(this);">Edit</button>
+								<button type="button" class="btn btn-danger" onclick="item.Delete(this);">Delete</button>
+								<button type="button" class="btn btn-danger" onclick="item.MoveToDoneList(this);">Done</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="col-md-12 end-item">
+			<h3>Done List</h3>
+			<div class="list-items">
+				<ul id="Done" class="row no-padding">
+					<li class="col-md-2">
+						<div class="item">						
+							<div class="item-title">Levi's Tshirt</div>
+							<div class="item-description">Clothes</div>
+							<div>
+								<button type="button" onclick="item.Display(this);" class="btn btn-danger">Edit</button>
+								<button type="button" class="btn btn-danger" onclick="item.Delete(this);">Delete</button>
+								<button type="button" class="btn btn-danger" onclick="item.MoveToToDoList(this);">ToDo</button>
+							</div>
+						</div>
+					</li>
+					<li class="col-md-2">
+						<div class="item">	
+							<div class="item-title">LED</div>
+							<div class="item-description">Electronics</div>
+							<div>
+								<button type="button" class="btn btn-danger" onclick="item.Display(this);">Edit</button>
+								<button type="button" class="btn btn-danger" onclick="item.Delete(this);">Delete</button>
+								<button type="button" class="btn btn-danger" onclick="item.MoveToToDoList(this);">ToDo</button>
+							</div>
+						</div>
+					</li>
+					<li class="col-md-2">
+						<div class="item">
+							<div class="item-title">Addidas ZigZag</div>
+							<div class="item-description">Shoes</div>
+							<div>
+								<button type="button" class="btn btn-danger" onclick="item.Display(this);">Edit</button>
+								<button type="button" class="btn btn-danger" onclick="item.Delete(this);">Delete</button>
+								<button type="button" class="btn btn-danger" onclick="item.MoveToToDoList(this);">ToDo</button>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
