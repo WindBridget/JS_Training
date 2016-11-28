@@ -66,8 +66,8 @@ Items.prototype.MoveToDoneList = function(ctl){
 	$(".item-description").val($(cols[1]).text());
 	var ret = "<li class='col-md-2'>" + "<div class='item'>" + "<div class='item-title'>" + $(".item-title").val() + "</div>" +
 		"<div  class='item-description'>" + $(".item-description").val()  + "</div>" + "<div>" +
-		"<button type='button'" + "class='btn btn-danger'" + "onclick='Display(this);'>" + "Edit" + "</button>" 
-	+ " " + "<button type='button'" + "class='btn btn-danger'" + "onclick='Delete(this);'>" + "Delete" + "</button>" + " " +
+		"<button type='button'" + "class='btn btn-danger'" + "onclick='item.Display(this);'>" + "Edit" + "</button>" 
+	+ " " + "<button type='button'" + "class='btn btn-danger'" + "onclick='item.Delete(this);'>" + "Delete" + "</button>" + " " +
 	"<button type='button'" + "class='btn btn-danger'" + "onclick='item.MoveToToDoList(this);'>" + "ToDo" + "</button>" +	"</div>" + "</div>" + "</li>";
 	$("#Done").append(ret);
 	$(ctl).parents("li").remove();
